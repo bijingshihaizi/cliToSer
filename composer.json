@@ -1,0 +1,15 @@
+{
+  "name": "cliToSer/cliToSer",
+  "description": "客户端调用rpc服务端",
+  "authors": [
+    {
+      "name": "cvl",
+      "email": "1225448773@qq.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CliToSer\\": "src/"
+    }
+  }
+}
