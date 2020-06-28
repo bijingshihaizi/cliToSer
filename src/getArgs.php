@@ -1,9 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace cliToSer;
+namespace CliToSer;
 
 use Hyperf\Contract\ConfigInterface;
+use Psr\Container\ContainerInterface;
 use Hyperf\Di\Container;
 use Hyperf\Event\Contract\ListenerInterface;
 use Hyperf\Framework\Event\BootApplication;
@@ -19,15 +20,20 @@ use cliToSer\ConnectToSer;
 class GetArgs
 {
     /**
-     * @Inject()
-     * @var ConfigInterface
+     * @var ContainerInterface
      */
-    static private $config;
+    private $container;
 
-    public static function process(){
-        $method = $array =debug_backtrace();
-        var_dump($method);
-        $consumers = self::$config->get('services.consumers', []);
+    function __construct(ContainerInterface $contain)
+    {
+        $this->container = $contain;
+    }
+
+    public function process(){
+        /** @var Container $container */
+        $container = $this->container;
+        $consumers = $container->get(ConfigInterface::class)->get('services.consumers', []);
+        var_dump($consumers);
         foreach ($consumers as $consumer){
             if (empty($consumer['name'])) {
                 continue;
