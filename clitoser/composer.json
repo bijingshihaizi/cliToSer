@@ -6,11 +6,5 @@
       "name": "cvl",
       "email": "1225448773@qq.com"
     }
-  ],
-  "minimum-stability": "stable",
-  "extra":{
-    "branch-alias":{
-      "dev-master":"1.0.x-dev"
-    }
-  }
+  ]
 }
