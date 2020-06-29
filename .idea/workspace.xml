@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d18453a-97ab-45bd-ab53-7a6a2f2c7054" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/clitoser/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/clitoser/composer.json" afterDir="false" />
-    </list>
+    <list default="true" id="3d18453a-97ab-45bd-ab53-7a6a2f2c7054" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +124,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593395220775</updated>
-      <workItem from="1593395222583" duration="1815000" />
+      <workItem from="1593395222583" duration="2409000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1593395367410</created>
@@ -139,7 +137,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1815000" />
+    <option name="totallyTimeSpent" value="2409000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
