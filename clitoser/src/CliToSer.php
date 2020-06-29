@@ -17,7 +17,7 @@ use Hyperf\HttpServer\Contract\ResponseInterface;
 use Hyperf\Di\Annotation\Inject;
 use cliToSer\ConnectToSer;
 
-class GetArgs
+class CliToSer
 {
     /**
      * @var ContainerInterface
