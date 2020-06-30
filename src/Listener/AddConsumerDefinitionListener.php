@@ -1,22 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace CliToSer\Listener;
+namespace Clitoser\Clitoser\Listener;
 
 use Hyperf\Contract\ConfigInterface;
 use Psr\Container\ContainerInterface;
 use Hyperf\Di\Container;
 use Hyperf\Event\Contract\ListenerInterface;
 use Hyperf\Framework\Event\BootApplication;
-use Hyperf\RpcClient\ProxyFactory;
-use function MongoDB\BSON\fromJSON;
-use Hyperf\HttpServer\Annotation\Controller;
-use Hyperf\HttpServer\Annotation\GetMapping;
-use Hyperf\HttpServer\Contract\RequestInterface;
-use Hyperf\HttpServer\Contract\ResponseInterface;
-use Hyperf\Di\Annotation\Inject;
-use CliToSer\ConnectToSer;
-use CliToSer\GetArgs;
+use CliToSer\Clitoser\ConnectToSer;
 
 class AddConsumerDefinitionListener implements ListenerInterface
 {

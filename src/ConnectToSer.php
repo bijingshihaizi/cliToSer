@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace CliToSer;
+namespace Clitoser\Clitoser;
 
 
 class ConnectToSer
