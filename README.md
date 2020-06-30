@@ -16,7 +16,7 @@ composer package for swoft and hyperf rpc cli to ser
 **引入明明空间**
 
 ```
-use CliToSer\ConnectToSer;
+use Clitoser\Clitoser\ConnectToSer;
 ```
 
 ```
