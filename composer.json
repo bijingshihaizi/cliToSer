@@ -1,10 +1,19 @@
 {
-  "name": "clitoser/clitoser ",
+  "name": "cliToSer/cliToSer",
   "description": "客户端调用rpc服务端",
   "authors": [
     {
       "name": "cvl",
       "email": "1225448773@qq.com"
     }
-  ]
+  ],
+  "minimum-stability": "stable",
+  "extra":{
+      "CliToSer": {
+        "config": "CliToSer\\CliToSer\\ConfigProvider"
+      },
+      "branch-alias":{
+      "dev-master":"1.0.x-dev"
+      }
+  }
 }
