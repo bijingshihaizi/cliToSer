@@ -13,7 +13,7 @@ composer package for swoft and hyperf rpc cli to ser
 
 ## 调用方法：
 
-**引入明明空间**
+**引入命名空间**
 
 ```
 use Clitoser\Clitoser\ConnectToSer;
