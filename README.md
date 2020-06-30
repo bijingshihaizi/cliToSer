@@ -6,7 +6,7 @@ composer package for swoft and hyperf rpc cli to ser
 ## 需要添加监听
 
 ```
-\CliToSer\Listener\AddConsumerDefinitionListener::class,
+\Clitoser\Clitoser\Listener\AddConsumerDefinitionListener::class,
 ```
 
 

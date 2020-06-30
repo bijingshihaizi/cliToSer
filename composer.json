@@ -7,11 +7,13 @@
       "email": "1225448773@qq.com"
     }
   ],
+  "autoload": {
+        "psr-4": {
+            "Clitoser\\Clitoter\\": "src/"
+        }
+    },
   "minimum-stability": "stable",
   "extra":{
-      "CliToSer": {
-        "config": "CliToSer\\CliToSer\\ConfigProvider"
-      },
       "branch-alias":{
       "dev-master":"1.0.x-dev"
       }
