@@ -8,7 +8,7 @@ use Psr\Container\ContainerInterface;
 use Hyperf\Di\Container;
 use Hyperf\Event\Contract\ListenerInterface;
 use Hyperf\Framework\Event\BootApplication;
-use CliToSer\Clitoser\ConnectToSer;
+use Clitoser\Clitoser\ConnectToSer;
 
 class AddConsumerDefinitionListener implements ListenerInterface
 {
