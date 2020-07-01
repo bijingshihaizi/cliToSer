@@ -38,6 +38,9 @@ class AddConsumerDefinitionListener implements ListenerInterface
         /** @var Container $container */
         $container = $this->container;
         $consumers = $container->get(ConfigInterface::class)->get('services.consumers', []);
+        $nodeaddr = [];
+        $interface = [];
+        $consuladdr = [];
         foreach ($consumers as $consumer){
             if (empty($consumer['name'])) {
                 continue;
@@ -48,13 +51,16 @@ class AddConsumerDefinitionListener implements ListenerInterface
 
             if (!empty($consumer['rpcserver']) && $consumer['rpcserver'] == 'swoft'){
                 foreach ($consumer['nodes'] as $v) {
-                    $addr[$consumer['name']] = $v['host'] . ':' . $v['port'];
+                    $nodeaddr[$consumer['name']] = $v['host'] . ':' . $v['port'];
                 }
             }
             if (!empty($consumer['rpcserver']) && $consumer['rpcserver'] == 'hyperf'){
                 continue;
             }
+            if (!empty($consumer['registry']['address'])){
+                $consuladdr[$consumer['name']] = $consumer['registry']['address'];
+            }
         }
-        return ConnectToSer::getInstance()->getArgs($addr, $interface);
+        return ConnectToSer::getInstance()->getArgs($nodeaddr, $interface, $consuladdr);
     }
 }
