@@ -1,5 +1,5 @@
 # hyperf-jsonrpc-request
-composer package for swoft and hyperf rpc cli to ser
+**description : hyperf客户端调用swoft-jsonrpc服务**
 
 
 
