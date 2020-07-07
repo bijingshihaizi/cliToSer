@@ -1,4 +1,4 @@
-# cliToSer
+# hyperf-jsonrpc-request
 composer package for swoft and hyperf rpc cli to ser
 
 
