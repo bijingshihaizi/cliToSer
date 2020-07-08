@@ -1,6 +1,6 @@
 {
-  "name": "clitoser/clitoser",
-  "description": "客户端调用rpc服务端",
+  "name": "vnloco/hyperf-jsonrpc-request",
+  "description": "hyperf客户端调用swoft-jsonrpc服务",
   "authors": [
     {
       "name": "cvl",
